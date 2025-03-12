@@ -9,6 +9,8 @@
     flakelight ./. {
       inherit inputs;
       imports = [flakelight-darwin.flakelightModules.default];
-      devShell.packages = pkgs: [pkgs.hello pkgs.coreutils];
+      devShell.packages = pkgs: [pkgs.hello pkgs.coreutils pkgs.alejandra pkgs.deno pkgs.nodejs pkgs.ocamlPackages.reanalyze];
+
+      devShell. shellHook = ''export PATH="./node_modules/.bin:$PATH"'';
     };
 }
