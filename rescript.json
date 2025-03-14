@@ -14,18 +14,19 @@
   ],
   "package-specs": {
     "module": "esmodule",
-    "in-source": true
+    "in-source": true,
+    "suffix": ".js"
   },
   "external-stdlib": "@rescript/std",
   "uncurried": true,
-  "suffix": ".res.mjs",
+  "suffix": ".js",
   "warnings": {
     "error": "+110+5"
   },
   "gentypeconfig": {
     "module": "esmodule",
     "moduleResolution": "bundler",
-    "generatedFileExtension": ".gen.tsx",
+    "generatedFileExtension": ".tsx",
     "debug": {
       "all": false,
       "basic": false
