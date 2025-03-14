@@ -6,137 +6,145 @@ import * as NavigationBar from "../lib/ui/NavigationBar.js";
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Page$default(props) {
-  return JsxRuntime.jsxs("div", {
-    children: [
-      JsxRuntime.jsx(NavigationBar.make, {}),
-      JsxRuntime.jsxs("div", {
-        children: [
-          JsxRuntime.jsxs("main", {
-            children: [
-              JsxRuntime.jsx(Image, {
-                alt: "Next.js logo",
-                className: "dark:invert",
-                height: 38.0,
-                priority: true,
-                src: "/next.svg",
-                width: 180.0
-              }),
-              JsxRuntime.jsxs("ol", {
-                children: [
-                  JsxRuntime.jsxs("li", {
-                    children: [
-                      "Get started by editing ",
-                      JsxRuntime.jsx("code", {
-                        children: "src/app/page.res",
-                        className: "bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold"
-                      }),
-                      "."
-                    ],
-                    className: "mb-2 tracking-[-.01em]"
-                  }),
-                  JsxRuntime.jsx("li", {
-                    children: "Save and see your changes instantly.",
-                    className: "tracking-[-.01em]"
-                  })
-                ],
-                className: "list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]"
-              }),
-              JsxRuntime.jsxs("div", {
-                children: [
-                  JsxRuntime.jsx(Link, {
-                    children: JsxRuntime.jsxs("p", {
-                      children: [
-                        JsxRuntime.jsx(Image, {
-                          alt: "Vercel logomark",
-                          className: "dark:invert",
-                          height: 20.0,
-                          src: "/vercel.svg",
-                          width: 20.0
-                        }),
-                        "Deploy now"
-                      ],
-                      className: "rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto",
-                      rel: "noopener noreferrer",
-                      target: "_blank"
-                    }),
-                    href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                  }),
-                  JsxRuntime.jsx(Link, {
-                    children: JsxRuntime.jsx("p", {
-                      children: "Read our docs",
-                      className: "rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]",
-                      rel: "noopener noreferrer",
-                      target: "_blank"
-                    }),
-                    href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                  })
-                ],
-                className: "flex gap-4 items-center flex-col sm:flex-row"
-              })
-            ],
-            className: "flex flex-col gap-[32px] row-start-2 items-center sm:items-start"
-          }),
-          JsxRuntime.jsxs("footer", {
-            children: [
-              JsxRuntime.jsxs("a", {
-                children: [
-                  JsxRuntime.jsx(Image, {
-                    alt: "File icon",
-                    height: 16.0,
-                    src: "/file.svg",
-                    width: 16.0
-                  }),
-                  "Learn"
-                ],
-                className: "flex items-center gap-2 hover:underline hover:underline-offset-4",
-                href: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-                rel: "noopener noreferrer",
-                target: "_blank"
-              }),
-              JsxRuntime.jsxs("a", {
-                children: [
-                  JsxRuntime.jsx(Image, {
-                    alt: "Window icon",
-                    height: 16.0,
-                    src: "/window.svg",
-                    width: 16.0
-                  }),
-                  "Examples"
-                ],
-                className: "flex items-center gap-2 hover:underline hover:underline-offset-4",
-                href: "https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-                rel: "noopener noreferrer",
-                target: "_blank"
-              }),
-              JsxRuntime.jsxs("a", {
-                children: [
-                  JsxRuntime.jsx(Image, {
-                    alt: "Globe icon",
-                    height: 16.0,
-                    src: "/globe.svg",
-                    width: 16.0
-                  }),
-                  "Go to nextjs.org →"
-                ],
-                className: "flex items-center gap-2 hover:underline hover:underline-offset-4",
-                href: "https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-                rel: "noopener noreferrer",
-                target: "_blank"
-              })
-            ],
-            className: "row-start-3 flex gap-[24px] flex-wrap items-center justify-center"
-          })
-        ],
-        className: "grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
-      })
-    ],
-    className: "grid grid-rows-[auto_1fr] min-h-screen"
-  });
+	return JsxRuntime.jsxs("div", {
+		children: [
+			JsxRuntime.jsx(NavigationBar.make, {}),
+			JsxRuntime.jsxs("div", {
+				children: [
+					JsxRuntime.jsxs("main", {
+						children: [
+							JsxRuntime.jsx(Image, {
+								alt: "Next.js logo",
+								className: "dark:invert",
+								height: 38.0,
+								priority: true,
+								src: "/next.svg",
+								width: 180.0,
+							}),
+							JsxRuntime.jsxs("ol", {
+								children: [
+									JsxRuntime.jsxs("li", {
+										children: [
+											"Get started by editing ",
+											JsxRuntime.jsx("code", {
+												children: "src/app/page.res",
+												className:
+													"bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold",
+											}),
+											".",
+										],
+										className: "mb-2 tracking-[-.01em]",
+									}),
+									JsxRuntime.jsx("li", {
+										children: "Save and see your changes instantly.",
+										className: "tracking-[-.01em]",
+									}),
+								],
+								className:
+									"list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]",
+							}),
+							JsxRuntime.jsxs("div", {
+								children: [
+									JsxRuntime.jsx(Link, {
+										children: JsxRuntime.jsxs("p", {
+											children: [
+												JsxRuntime.jsx(Image, {
+													alt: "Vercel logomark",
+													className: "dark:invert",
+													height: 20.0,
+													src: "/vercel.svg",
+													width: 20.0,
+												}),
+												"Deploy now",
+											],
+											className:
+												"rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto",
+											rel: "noopener noreferrer",
+											target: "_blank",
+										}),
+										href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
+									}),
+									JsxRuntime.jsx(Link, {
+										children: JsxRuntime.jsx("p", {
+											children: "Read our docs",
+											className:
+												"rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]",
+											rel: "noopener noreferrer",
+											target: "_blank",
+										}),
+										href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
+									}),
+								],
+								className: "flex gap-4 items-center flex-col sm:flex-row",
+							}),
+						],
+						className:
+							"flex flex-col gap-[32px] row-start-2 items-center sm:items-start",
+					}),
+					JsxRuntime.jsxs("footer", {
+						children: [
+							JsxRuntime.jsxs("a", {
+								children: [
+									JsxRuntime.jsx(Image, {
+										alt: "File icon",
+										height: 16.0,
+										src: "/file.svg",
+										width: 16.0,
+									}),
+									"Learn",
+								],
+								className:
+									"flex items-center gap-2 hover:underline hover:underline-offset-4",
+								href: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
+								rel: "noopener noreferrer",
+								target: "_blank",
+							}),
+							JsxRuntime.jsxs("a", {
+								children: [
+									JsxRuntime.jsx(Image, {
+										alt: "Window icon",
+										height: 16.0,
+										src: "/window.svg",
+										width: 16.0,
+									}),
+									"Examples",
+								],
+								className:
+									"flex items-center gap-2 hover:underline hover:underline-offset-4",
+								href: "https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
+								rel: "noopener noreferrer",
+								target: "_blank",
+							}),
+							JsxRuntime.jsxs("a", {
+								children: [
+									JsxRuntime.jsx(Image, {
+										alt: "Globe icon",
+										height: 16.0,
+										src: "/globe.svg",
+										width: 16.0,
+									}),
+									"Go to nextjs.org →",
+								],
+								className:
+									"flex items-center gap-2 hover:underline hover:underline-offset-4",
+								href: "https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
+								rel: "noopener noreferrer",
+								target: "_blank",
+							}),
+						],
+						className:
+							"row-start-3 flex gap-[24px] flex-wrap items-center justify-center",
+					}),
+				],
+				className:
+					"grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]",
+			}),
+		],
+		className: "grid grid-rows-[auto_1fr] min-h-screen",
+	});
 }
 
 let $$default = Page$default;
 
-export {
-  $$default as default,
-}
+export { $$default as default };
 /* next/link Not a pure module */

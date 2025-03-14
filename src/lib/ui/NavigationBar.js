@@ -4,49 +4,46 @@ import Link from "next/link";
 import * as JsxRuntime from "react/jsx-runtime";
 
 function NavigationBar$NavigationBarLogo(props) {
-  return JsxRuntime.jsx(Link, {
-    children: JsxRuntime.jsxs("span", {
-      children: [
-        JsxRuntime.jsx("span", {
-          children: "Fcking ",
-          className: "text-black-800"
-        }),
-        JsxRuntime.jsx("span", {
-          children: "ReScript",
-          className: "text-orange-800"
-        })
-      ],
-      className: "text-xl ml-2 align-middle font-semibold"
-    }),
-    href: "/"
-  });
+	return JsxRuntime.jsx(Link, {
+		children: JsxRuntime.jsxs("span", {
+			children: [
+				JsxRuntime.jsx("span", {
+					children: "Fcking ",
+					className: "text-black-800",
+				}),
+				JsxRuntime.jsx("span", {
+					children: "ReScript",
+					className: "text-orange-800",
+				}),
+			],
+			className: "text-xl ml-2 align-middle font-semibold",
+		}),
+		href: "/",
+	});
 }
 
 let NavigationBarLogo = {
-  make: NavigationBar$NavigationBarLogo
+	make: NavigationBar$NavigationBarLogo,
 };
 
 function NavigationBar$Navigation(props) {
-  return JsxRuntime.jsxs("nav", {
-    children: [
-      JsxRuntime.jsx(NavigationBar$NavigationBarLogo, {}),
-      JsxRuntime.jsx("div", {
-        className: "flex w-2/3 justify-end items-center"
-      })
-    ],
-    className: "p-2 h-12 flex border-b border-gray-200 justify-between items-center text-sm"
-  });
+	return JsxRuntime.jsxs("nav", {
+		children: [
+			JsxRuntime.jsx(NavigationBar$NavigationBarLogo, {}),
+			JsxRuntime.jsx("div", {
+				className: "flex w-2/3 justify-end items-center",
+			}),
+		],
+		className:
+			"p-2 h-12 flex border-b border-gray-200 justify-between items-center text-sm",
+	});
 }
 
 let Navigation = {
-  make: NavigationBar$Navigation
+	make: NavigationBar$Navigation,
 };
 
 let make = NavigationBar$Navigation;
 
-export {
-  NavigationBarLogo,
-  Navigation,
-  make,
-}
+export { NavigationBarLogo, Navigation, make };
 /* next/link Not a pure module */
