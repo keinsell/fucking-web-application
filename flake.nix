@@ -14,7 +14,7 @@
     flakelight ./. {
       inherit inputs;
       imports = [ flakelight-darwin.flakelightModules.default flakelight.flakelightModules.flakelightModule ];
-      devShell.packages = pkgs: [ pkgs.hello pkgs.coreutils pkgs.alejandra pkgs.deno pkgs.nodejs pkgs.ocamlPackages.reanalyze pkgs.biome pkgs.pnpm pkgs.nodePackages.node2nix];
+      devShell.packages = pkgs: [ pkgs.hello pkgs.coreutils pkgs.alejandra pkgs.deno pkgs.nodejs pkgs.ocamlPackages.reanalyze pkgs.biome pkgs.pnpm pkgs.nodePackages.node2nix pkgs.onefetch];
 
       package = { stdenv, defaultMeta, nodejs, pnpm, geist-font }:
         stdenv.mkDerivation (finalAttrs: {
@@ -67,7 +67,10 @@
           meta = defaultMeta;
         });
 
-      devShell. shellHook = ''export PATH="./node_modules/.bin:$PATH"'';
+      devShell. shellHook = ''
+          export PATH="./node_modules/.bin:$PATH"
+          onefetch
+      '';
 
       formatters = pkgs: {
         "*.js" = "${pkgs.biome}/bin/biome format --write";
