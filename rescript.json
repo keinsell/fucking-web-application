@@ -5,7 +5,7 @@
     "version": 4
   },
   "bs-dependencies": ["@rescript/react", "@rescript/core", "@rescript/webapi"],
-  "bsc-flags": ["-open RescriptCore", "-open WebAPI.Global"],
+  "bsc-flags": ["-open RescriptCore", "-open WebApi.Global"],
   "sources": [
     {
       "dir": "src",

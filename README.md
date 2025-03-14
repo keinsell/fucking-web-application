@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fucking Web Application
+
+Fucking Web Application (FWA) is an experimentation repository dedicated for exploration of modern concepts around ecosystem above HTML, CSS and JavaScript lifting it to the tits. Featuring essential patterns of web application such as authentication, caching, SSR/CSR, PWAs and consuming resources with a glance and style, repository is not tailored to be any kind of application beside core functionality for *almost* every web application.
+
+- Glue between [Next.js](https://nextjs.org) and [ReScript](https://rescript-lang.org) with preconfigured dependencies and compilation using `rewatch` instead `rescript` library.
 
 ## Getting Started
 
